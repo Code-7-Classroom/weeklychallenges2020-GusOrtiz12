@@ -1,5 +1,5 @@
 var imageStart = 0;
-var images = ['slider2.jpg', 'gtrslider.jpg', 'evojdm.jpeg', 'r34heaven.jpg'];
+var images = ['StandardPack/slider2.jpg', 'StandardPack/gtrslider.jpg', 'StandardPack/evojdm.jpeg', 'StandardPack/r34heaven.jpg'];
 var pause = 1500;
 
 function slideImage(){
