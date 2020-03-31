@@ -1,4 +1,4 @@
-// .join() .splice() .pop() 
+// .push() .splice() .pop() 
 
 var drinks = ['Water', 'Coffee', 'Tea'];
 var foods = ['Apple', 'Sandwich', 'Chips'];
