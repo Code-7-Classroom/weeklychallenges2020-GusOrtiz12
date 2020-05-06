@@ -138,25 +138,6 @@ footer .instagram:hover {
   text-align: center;
   font-size: 8px;
 }
-@media (max-device-width : 759px){
-  .slider{
-  display: block;
-  }
-  .silvia{
-  display: none;
-  }
-  .logo{
-  text-align: center;
-  }
-  .header{
-  display: flex;
-  display:inline-block;
-  font-size: 12px;
-  }
-  .nav a {
-  font-size: 1.1em;
-  }
-}
 
 body{
   background-color: rgb(212, 212, 212);
@@ -199,21 +180,6 @@ body{
 .child--image{
   border-radius: 10px;
 }
-
-@media (max-device-width : 759px){
-  .logo{
-  justify-self: center;
-  } 
-  .header{
-  display: flex;
-  display:inline-block;
-  font-size: 12px;
-  }
-  .nav a {
-  font-size: 1.1em;
-  }
-}
-
 
 body{
   background-color: rgb(212, 212, 212);
@@ -338,6 +304,34 @@ a{
   .hidden{
   display: block;
   width: 99%;
+  }
+  .nav a {
+  font-size: 1.1em;
+  }
+  .slider{
+  display: block;
+  }
+  .silvia{
+  display: none;
+  }
+  .logo{
+  text-align: center;
+  }
+  .header{
+  display: flex;
+  display:inline-block;
+  font-size: 12px;
+  }
+  .nav a {
+  font-size: 1.1em;
+  }
+  .logo{
+  justify-self: center;
+  } 
+  .header{
+  display: flex;
+  display:inline-block;
+  font-size: 12px;
   }
   .nav a {
   font-size: 1.1em;
