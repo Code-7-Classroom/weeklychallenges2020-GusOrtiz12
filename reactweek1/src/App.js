@@ -8,7 +8,7 @@ class App extends Component{
     super(props);
     this.state = {
       persons:[
-        { 
+      { 
       name: 'Padín',
       phone: "787-323-3705",
       DoB:'November 34,2201',
@@ -32,7 +32,12 @@ class App extends Component{
       name: 'Daniela Iglesias',
       phone: "787-323-2349",
       DoB:'May 40, 2139',
-      gender:'Mujer'}
+      gender:'Mujer'},
+      {
+      name: 'Luis Llorente',
+      phone: "787-234-4950",
+      DoB: 'September 20, 1997',
+      gender: 'Hombre'},
       ]
     };
   }
