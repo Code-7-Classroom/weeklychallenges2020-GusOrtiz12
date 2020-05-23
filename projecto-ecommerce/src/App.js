@@ -2,13 +2,16 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Products from './Products/Products.js'
+import Contact from './Contact/Contact.js'
 
 class App extends React.Component {
   render() {
     if (window.location.pathname === '/products.html') {
       return (<Products/>);
+    } else if (window.location.pathname === '/contact.html'){
+      return(<Contact/>);
     } else {
-      console.log("THIs is the home page!!!!");
+      console.log("this is the home page!");
     }
     return (
       <React.Fragment>
@@ -20,27 +23,24 @@ class App extends React.Component {
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </header>
-        <img className="slider" id="slide" name="slide" alt="slider" src="script.js" />
+        <img className="slider" id="slide" name="slide" alt="slider" src="setupTests.js" />
         <img className="silvia" src="fcmediaq.jpg" alt="silvia" />
         <h1 className="homecars">Featured Items</h1>
         <div className="feature">
           <article className="child">
             <img className="child--image" src="Fotos/r33jdm.jpg" alt="child--image" />
-            <h3><a href="products.html"> Nissan Skyline</a></h3>
             <h4> 1996 R33 GTR </h4>
             <p>RB26DETT (2.6L 6-cylinder turbo, 5-speed manual)</p>
             <h5>Offer: $42,000</h5>
           </article>
           <article className="child">
             <img className="child--image" src="Fotos/Rx7jdm.png" alt="child--image" />
-            <h3><a href="products.html">Mazda</a></h3>
             <h4> 1998 Rx-7 (Fd) </h4>
             <p>13B Rotary (1.3L twin-turbocharged, 5-speed manual)</p>
             <h5>Offer: $40,0000</h5>
           </article>
           <article className="child">
             <img className="child--image" src="Fotos/nsxjdm.jpg" alt="child--image" />
-            <h3><a href="products.html"> Honda</a></h3>
             <h4>1991 NSX </h4>
             <p>C32B (3.2L V-6, 5-speed manual)</p>
             <h5> Offer: $50,000</h5>
