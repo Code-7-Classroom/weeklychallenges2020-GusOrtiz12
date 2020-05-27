@@ -26,6 +26,18 @@ class Products extends React.Component {
                             )})}
                         }
                     </div>
+                    <footer className="footer1">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+          <ul className="ul-2">
+            <li><a className="facebook" href="http://facebook.com/" target="_blank"><i className="fa fa-fw fa-2x fa-inverse fa-facebook"></i></a></li>
+            <li><a className="twitter" href="http://twitter.com/"><i className="fa fa-fw fa-2x fa-inverse fa-twitter"></i></a></li>
+            <li><a className="instagram" href="https://www.instagram.com/"><i className="fa fa-fw fa-2x fa-inverse fa-instagram"></i></a></li>
+          </ul>
+          <a className="a" href="#" id="footer">
+            <h3> JDM</h3>
+          </a>
+          <h3> &copy;2020 | Gustavo A. Ortiz</h3>
+        </footer>
             </React.Fragment>
         )
     }
