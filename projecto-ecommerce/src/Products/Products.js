@@ -18,7 +18,7 @@ class Products extends React.Component {
                         {productos.productos.map((item, key) => {
                             return (
                                 <article className="child">
-                                    <img src={item.image}/>
+                                    <img className="images" src={item.image}/>
                                     <h3>{item.name}</h3>
                                     <p>{item.description}</p>
                                     <h5>{item.price}</h5>

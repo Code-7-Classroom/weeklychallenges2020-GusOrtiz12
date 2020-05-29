@@ -1,4 +1,5 @@
 import React from 'react';
+import '../App.css'
 import '../index.css'
 
 class Contact extends React.Component {
@@ -14,8 +15,8 @@ class Contact extends React.Component {
                     </ul>
                 </header>
 
-                <img className="skyline" src="StandardPack/r322.jpg" alt="skyline" />
-                <img className="hidden" src="StandardPack/index.jpg" alt="hidden" />
+                <img className="skyline" src="Fotos/r322.jpg" alt="skyline" />
+                <img className="hidden" src="Fotos/index.jpg" alt="hidden" />
                 <div className="showcase container">
                     <h2 className="text-primary">Contact Us</h2>
                 </div>
