@@ -1,15 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
 import Products from './Products/Products.js'
-import Contact from './Contact/Contact.js'
+import Form from './Contact/Contacto.js'
+import SlideShow from './Home/Home.js'
 
 class App extends React.Component {
   render() {
     if (window.location.pathname === '/products.html') {
       return (<Products/>);
     } else if (window.location.pathname === '/contact.html'){
-      return(<Contact/>);
+      return(<Form/>);
     } else {
       console.log("this is the home page!");
     }
@@ -23,8 +23,8 @@ class App extends React.Component {
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </header>
-        <img className="slider" id="slide" name="slide" alt="slider" src="setupTests.js" />
-        <img className="silvia" src="fcmediaq.jpg" alt="silvia" />
+        <SlideShow/>
+        <img className="silvia" src="Fotos/fcmediaq.jpg" alt="silvia" />
         <h1 className="homecars">Featured Items</h1>
         <div className="feature">
           <article className="child">
