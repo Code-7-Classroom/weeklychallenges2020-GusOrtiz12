@@ -1,0 +1,31 @@
+DROP DATABASE IF EXISTS veryHard;
+CREATE DATABASE veryHard;
+USE veryHard;
+
+
+CREATE TABLE carritos (
+    Id INT auto_increment PRIMARY KEY,
+    Make VARCHAR(20),
+    Model VARCHAR(20),
+    Year INT
+);
+
+INSERT INTO carritos(Make,Model,Year)
+values('Mazda','Rx-7', 1998),
+('Nissan','Skyline', 1993),
+('Toyota','Supra', 1996);
+
+SELECT * FROM carritos;
+
+ALTER TABLE carritos ADD Price int;
+ALTER TABLE carritos ADD Color VARCHAR(30);
+
+UPDATE carritos SET Price = 35000 WHERE Id = 1;
+UPDATE carritos SET Price = 28000 WHERE Id = 2;
+UPDATE carritos SET Price = 50000 WHERE Id = 3;
+
+UPDATE carritos SET Color = 'Yellow' WHERE Id = 1;
+UPDATE carritos SET Color = 'Midnight Purple' WHERE Id = 2;
+UPDATE carritos SET Color = 'Red' WHERE Id = 3;
+
+SELECT CONCAT(Make, ' ', Model) FROM vCars;

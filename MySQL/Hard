@@ -1,0 +1,89 @@
+DROP DATABASE IF EXISTS StarFury;
+CREATE DATABASE StarFury;
+USE StarFury;
+
+
+
+CREATE TABLE Movies(
+	Id INT NOT NULL auto_increment PRIMARY KEY,
+    Title VARCHAR(50),
+    Rating INT,
+    Release_Year YEAR
+);
+
+SELECT * FROM Movies;
+
+INSERT INTO Movies(Title,Rating,Release_Year)
+VALUES('Star Wars: The Last Jedi',7,'2017'),
+('Star Wars: The Force Awakens',7,'2015'),
+('Star Wars: The Rise of Skywalker',8,'2019'),
+('Star Wars: Revenge of the Sith',9,'2005'),
+('Star Wars: Attack of the Clones',8,'2002'),
+('Star Wars: The Phantom Menace', 7, '1999'),
+('The Fast and The Furious', 10, '2001'),
+('2 Fast 2 Furious', 10, '2003'),
+('The Fast and the Furious: Tokio Drift', 12, '2006'),
+('Fast & Furious', 9, '2009');
+
+ 
+alter table Movies
+add firstName varchar(25);
+
+alter table Movies
+add LastName varchar(25);
+SELECT * FROM Movies;
+
+UPDATE Movies
+SET LastName = 'Johnson', FirstName = 'Rian'
+WHERE Title = 'Star Wars: The Last Jedi';
+
+UPDATE Movies
+SET LastName = 'Abrams', FirstName = 'J.J.'
+WHERE Title = 'Star Wars: The Force Awakens';
+
+UPDATE Movies
+SET LastName = 'Abrams', FirstName = 'J.J.'
+WHERE Title = 'Star Wars: The Rise of Skywalker';
+
+UPDATE Movies
+SET LastName = 'Lucas', FirstName = 'George'
+WHERE Title = 'Star Wars: Revenge of the Sith';
+
+UPDATE Movies
+SET LastName = 'Lucas', FirstName = 'George'
+WHERE Title = 'Star Wars: Attack of the Clones';
+
+UPDATE Movies
+SET LastName = 'Lucas', FirstName = 'George'
+WHERE Title = 'Star Wars: The Phantom Menace';
+
+UPDATE Movies
+SET LastName = 'Lin', FirstName = 'Justin'
+WHERE Title = 'The Fast and The Furious';
+
+UPDATE Movies
+SET LastName = 'Singleton', FirstName = 'John'
+WHERE Title = '2 Fast 2 Furious';
+
+UPDATE Movies
+SET LastName = 'Lin', FirstName = 'Justin'
+WHERE Title = 'The Fast and the Furious: Tokio Drift';
+
+UPDATE Movies
+SET LastName = 'Lin', FirstName = 'Justin'
+WHERE Title = 'Fast & Furious';
+
+
+SELECT * FROM Movies;
+
+ 
+SELECT CONCAT(firstName, ' ', LastName) FROM Movies;
+
+
+Select * FROM Movies ORDER BY LastName ASC;
+
+
+DELETE FROM Movies WHERE RIGHT(LastName,1) BETWEEN 'r' AND 'z';
+
+
+SELECT * FROM Movies LIMIT 3;

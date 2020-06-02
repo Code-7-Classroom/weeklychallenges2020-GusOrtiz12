@@ -1,0 +1,19 @@
+DROP DATABASE IF EXISTS Challenge;
+CREATE DATABASE Challenge;
+USE Challenge;
+
+
+CREATE TABLE Cars(
+    Id INT auto_increment PRIMARY KEY,
+    Make VARCHAR(20),
+    Model VARCHAR(20),
+    Year INT
+);
+
+SELECT * FROM Cars;
+
+INSERT INTO Cars(make, model, year)
+VALUES('Mazda','Rx-7',1998),('Nissan','R32 Skyline', 1993),('Toyota','Supra', 1996);
+
+INSERT INTO Cars(Make,Model,Year)
+VALUES('Nissan', 'Sylvia', 1999),('Honda','NSX', 1992);

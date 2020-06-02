@@ -1,0 +1,28 @@
+DROP DATABASE IF EXISTS StarFurious;
+CREATE DATABASE StarFurious;
+USE StarFurious;
+
+
+
+CREATE TABLE Movies(
+	Id INT NOT NULL auto_increment PRIMARY KEY,
+    Title VARCHAR(50),
+    Rating INT,
+    Release_Year YEAR
+);
+
+SELECT * FROM Movies;
+
+INSERT INTO Movies(Title,Rating,Release_Year)
+VALUES('Star Wars: The Last Jedi',7,'2017'),
+('Star Wars: The Force Awakens',7,'2015'),
+('Star Wars: The Rise of Skywalker',8,'2019'),
+('Star Wars: Revenge of the Sith',9,'2005'),
+('Star Wars: Attack of the Clones',8,'2002'),
+('Star Wars: The Phantom Menace', 7, '1999'),
+('The Fast and The Furious', 10, '2001'),
+('2 Fast 2 Furious', 10, '2003'),
+('The Fast and the Furious: Tokio Drift', 12, '2006'),
+('Fast & Furious', 9, '2009');
+
+SELECT * FROM Movies WHERE Title LIKE '%s%';

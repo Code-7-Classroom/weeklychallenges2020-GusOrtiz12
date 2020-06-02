@@ -1,0 +1,26 @@
+DROP DATABASE IF EXISTS libritos;
+CREATE DATABASE libritos;
+USE libritos;
+
+
+CREATE TABLE Book(
+	 Id INT NOT NULL auto_increment PRIMARY KEY,
+     Title VARCHAR(50),
+     Publish DATE,
+     FirstName VARCHAR(30),
+     LastName VARCHAR(30)
+);
+
+INSERT INTO Book(Title, Publish, FirstName, LastName)
+values('The Giver','1993','Louis','Lowry'),
+('La Ciudad de las Bestias','2002','Isabel','Allende'),
+('Zorro','2005','Isabel','Allende'),
+('Cien Años de Soledad','1967','Gabriel','Garcia', 'Marquez');
+('Cien Sonetos de Amor','1959','Pablo','Neruda');
+
+SELECT * FROM Book;
+
+
+SELECT * FROM Book ORDER BY Publish ASC;
+DELETE FROM Book WHERE Publish_Date = '1959';
+SELECT COUNT(Id) FROM Book;
